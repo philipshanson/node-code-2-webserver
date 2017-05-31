@@ -64,6 +64,12 @@ app.get('/bad', (request, response) => {
 	});
 });
 
+app.get('/projects', (request, response) => {
+	response.render('projects.hbs', {
+		pageTitle: 'Projects Page'
+	});
+});
+
 //use 300 locally
 //on Heroku
 //use herokus Environment variable
